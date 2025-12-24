@@ -9,15 +9,15 @@ const pageContainerStyles = `
     height: 80vh;
     margin: 40px auto;
     border-radius: 2rem;
-    background: rgba(0, 0, 0, 0.65);
-    box-shadow: 0px 0px 8px 8px rgba(184, 129, 1, 0.10),
-        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    background: linear-gradient(155deg, rgba(8, 12, 26, 0.92), rgba(12, 22, 48, 0.95));
+    box-shadow: 0px 0px 18px 8px rgba(79, 123, 255, 0.08),
+        0 10px 30px -5px rgba(4, 13, 46, 0.45);
     overflow: hidden;
   }
 
   .text-area {
     flex: 8;
-    border-right: 1px solid #ffd246;
+    border-right: 1px solid rgba(123, 164, 255, 0.3);
     height: 100%;
     padding: 32px;
     display: flex;
@@ -31,17 +31,17 @@ const pageContainerStyles = `
   }
 
   .text-area::-webkit-scrollbar-track {
-    background: rgba(255, 210, 70, 0.1);
+    background: rgba(123, 164, 255, 0.12);
     border-radius: 4px;
   }
 
   .text-area::-webkit-scrollbar-thumb {
-    background: #ffd246;
+    background: #7fa3ff;
     border-radius: 4px;
   }
 
   .text-area::-webkit-scrollbar-thumb:hover {
-    background: #e27100;
+    background: #a6c1ff;
   }
 
   .media-area {
@@ -58,7 +58,7 @@ const pageContainerStyles = `
 
   .title {
     margin: 0;
-    color: #e27100;
+    color: #9bb7ff;
     font-size: 52px;
     font-weight: 700;
     text-align: center;
@@ -67,7 +67,7 @@ const pageContainerStyles = `
   .divider {
     width: 100%;
     height: 3px;
-    background: linear-gradient(90deg, #e27100 0%, #ffd246 100%);
+    background: linear-gradient(90deg, #5d8bff 0%, #9bb7ff 100%);
     border-radius: 2px;
     margin: 1px 0px 18px 0px;
     opacity: 0.8;
@@ -83,7 +83,7 @@ const pageContainerStyles = `
     right: 8px;
     background: transparent;
     border: none;
-    color: #e27100;
+    color: #9bb7ff;
     font-size: 1.5rem;
     cursor: pointer;
     z-index: 1;
@@ -92,10 +92,10 @@ const pageContainerStyles = `
   }
 
   .text-input {
-    background: #ffe6b3;
+    background: #cfe1ff;
     border-radius: 8px;
     padding: 12px;
-    color: #222;
+    color: #0b1533;
     font-size: 1.4rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 600;
@@ -106,33 +106,33 @@ const pageContainerStyles = `
     resize: none;
     box-sizing: border-box;
     outline: none;
-    box-shadow: 0 2px 8px rgba(226,113,0,0.04);
+    box-shadow: 0 2px 8px rgba(79,123,255,0.12);
   }
 
   .text-display {
-    background: #ffe6b3;
+    background: #cfe1ff;
     border-radius: 8px;
     padding: 12px;
-    color: #222;
+    color: #0b1533;
     font-size: 1.4rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 600;
     cursor: pointer;
     min-height: 36px;
-    box-shadow: 0 2px 8px rgba(226,113,0,0.04);
+    box-shadow: 0 2px 8px rgba(79,123,255,0.12);
   }
 
   .add-block-button {
     margin-top: 12px;
     padding: 8px 20px;
     font-size: 1.4rem;
-    background: linear-gradient(90deg, #e27100 0%, #ffd246 100%);
-    color: #222;
+    background: linear-gradient(90deg, #4f7bff 0%, #9bb7ff 100%);
+    color: #0b1533;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
-    box-shadow: 0 2px 12px rgba(226,113,0,0.12);
+    box-shadow: 0 2px 12px rgba(79,123,255,0.18);
   }
 
   .media-container {
@@ -149,9 +149,9 @@ const pageContainerStyles = `
     width: 100%;
     height: auto;
     border-radius: 12px;
-    border: 2px solid #ffd246;
+    border: 2px solid #9bb7ff;
     object-fit: contain;
-    box-shadow: 0 2px 8px rgba(226,113,0,0.08);
+    box-shadow: 0 2px 12px rgba(79,123,255,0.18);
     opacity: 1;
     background: #fff;
     display: block;

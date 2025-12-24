@@ -57,7 +57,7 @@ const chromaGridStyles = `
   min-height: 500px;
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid #333;
+  border: 1px solid rgba(123, 164, 255, 0.35);
   transition: border-color 0.3s ease;
   background: var(--card-gradient);
   
@@ -68,7 +68,7 @@ const chromaGridStyles = `
 
 .chroma-card:hover {
   /* border-color: var(--card-border); */
-  border-color: #ffd21f;
+  border-color: #9bb7ff;
 }
 
 .chroma-card::before {
@@ -134,13 +134,13 @@ const chromaGridStyles = `
 }
 
 .handle {
-  color: #aaa;
+  color: #cfe1ff;
   justify-self: end;
   font-size: 1rem;
 }
 
 .role {
-  color: #aaa;
+  color: #d7e6ff;
   grid-column: 1 / span 2;
   font-size: 1rem;
 }
@@ -258,7 +258,7 @@ export interface ChromaGridProps {
 type SetterFn = (v: number | string) => void;
 
 export const ChromaGrid: React.FC<ChromaGridProps> = ({
-  color ="orange",
+  color ="blue",
   className = "",
   radius = 300,
   columns = 5,
@@ -275,7 +275,7 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
 
   const colorGrid: ChromaItem[] = [
     {
-    image: "https://media.licdn.com/dms/image/v2/D4E03AQHgM8-b6YnEWA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720511882437?e=1755129600&v=beta&t=PORD_vegfkC7MhFf6qu2hSmz5xmEyRjZO_IwqBNEwZY",
+    image:"/assets/Poggi.png",
     title: "Romain Poggi",
     subtitle: "Student",
     handle: "@rompoggi",
@@ -284,7 +284,16 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
     url: "https://github.com/sarahjohnson"
   },
   {
-    image: "https://media.licdn.com/dms/image/v2/D4E03AQGogY0h_hDZEA/profile-displayphoto-crop_800_800/B4EZdvwHV3GcAI-/0/1749926573991?e=1755734400&v=beta&t=oKsmvPJau6lLtvDBQ4LhmOCFNtQNyfhUcRuJ-gfPXbA",
+    image: "/assets/Signoretti.png",
+    title: "Andrea Signoretti",
+    subtitle: "Student",
+    handle: "@andrea-signoretti",
+    borderColor: "#10B981",
+    gradient: "linear-gradient(225deg, #8B5CF6, #000)",
+    url: "https://linkedin.com/in/mikechen"
+  },
+  {
+    image:"/assets/Gaspard.png",
     title: "Octave Gaspard",
     subtitle: "Student",
     handle: "@octavegaspard",
@@ -293,7 +302,7 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
     url: "https://linkedin.com/in/mikechen"
   },
   {
-    image: "https://media.licdn.com/dms/image/v2/C4E03AQHBP-RcilWHyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1644261388068?e=1755129600&v=beta&t=yUh1nlajPhTOHdEz5PSxUFtgJ2-w_V48TKuFfwgA4iI",
+    image: "/assets/Turkieh.png",
     title: "Thomas Turkieh",
     subtitle: "Student",
     handle: "@thomas-turkieh",
@@ -302,78 +311,70 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
     url: "https://linkedin.com/in/mikechen"
   },
   {
-    image: "https://minio.binets.fr/sigma-prod/pictures/users/vianney.gauthier?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=sigma-prod%2F20250613%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250613T204148Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=47164d516f59234c50859beae7b5d00da2d2baabcf881cd732773b2fa18ae87a",
+    image: "/assets/Gauthier.png",
     title: "Vianney Gauthier",
     subtitle: "Student",
     handle: "@vianney-gauthier",
     borderColor: "#10B981",
     gradient: "linear-gradient(195deg, #EF4444, #000)",
     url: "https://linkedin.com/in/mikechen"
-  },
-  {
-    image: "https://media.licdn.com/dms/image/v2/D4E03AQGUTwMLs-47BQ/profile-displayphoto-shrink_800_800/B4EZa6zHZ5HwAg-/0/1746890684558?e=1755129600&v=beta&t=M3x-9JWmLN5uFN1T-VQeS6TvT43huC5Jb_c8Prd-gSU",
-    title: "Andrea Signoretti",
-    subtitle: "Student",
-    handle: "@andrea-signoretti",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(225deg, #8B5CF6, #000)",
-    url: "https://linkedin.com/in/mikechen"
   }
+
 ];
 
 const orangeGrid: ChromaItem[] = [
-    {
-    image: "https://media.licdn.com/dms/image/v2/D4E03AQHgM8-b6YnEWA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720511882437?e=1755129600&v=beta&t=PORD_vegfkC7MhFf6qu2hSmz5xmEyRjZO_IwqBNEwZY",
+  {
+    image: "/assets/Poggi.png",
     title: "Romain Poggi",
     subtitle: "Student",
     handle: "@rompoggi",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #FFE585, #000)",
+    borderColor: "#9bb7ff",
+    gradient: "linear-gradient(145deg, #1a2649, #4f7bff)",
     url: "https://www.linkedin.com/in/romain-poggi-95696323a/"
   },
   {
-    image: "https://media.licdn.com/dms/image/v2/D4E03AQGogY0h_hDZEA/profile-displayphoto-crop_800_800/B4EZdvwHV3GcAI-/0/1749926573991?e=1755734400&v=beta&t=oKsmvPJau6lLtvDBQ4LhmOCFNtQNyfhUcRuJ-gfPXbA",
-    title: "Octave Gaspard",
-    subtitle: "Student",
-    handle: "@octavegaspard",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(210deg, #FFD246, #000)",
-    url: "https://www.linkedin.com/in/octave-g-b47b93264/"
-  },
-  {
-    image: "https://media.licdn.com/dms/image/v2/C4E03AQHBP-RcilWHyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1644261388068?e=1755129600&v=beta&t=yUh1nlajPhTOHdEz5PSxUFtgJ2-w_V48TKuFfwgA4iI",
-    title: "Thomas Turkieh",
-    subtitle: "Student",
-    handle: "@thomas-turkieh",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(165deg, #FFBC1B, #000)",
-    url: "https://media.licdn.com/dms/image/v2/C4E03AQHBP-RcilWHyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1644261388068?e=1755734400&v=beta&t=VKUlEWRNLx4eucjgFd_TgrjoZOkAEvBS0L4tzad6UTU"
-  },
-  {
-    image: "https://minio.binets.fr/sigma-prod/pictures/users/vianney.gauthier?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=sigma-prod%2F20250613%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250613T204148Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=47164d516f59234c50859beae7b5d00da2d2baabcf881cd732773b2fa18ae87a",
-    title: "Vianney Gauthier",
-    subtitle: "Student",
-    handle: "@vianney-gauthier",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(195deg, #FC9700, #000)",
-    url: "https://www.linkedin.com/in/vianney-gauthier-42b308334/"
-  },
-  {
-    image: "https://media.licdn.com/dms/image/v2/D4E03AQGUTwMLs-47BQ/profile-displayphoto-shrink_800_800/B4EZa6zHZ5HwAg-/0/1746890684558?e=1755129600&v=beta&t=M3x-9JWmLN5uFN1T-VQeS6TvT43huC5Jb_c8Prd-gSU",
+    image: "/assets/Signoretti.png",
     title: "Andrea Signoretti",
     subtitle: "Student",
     handle: "@andrea-signoretti",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(225deg, #E27100, #000)",
+    borderColor: "#9bb7ff",
+    gradient: "linear-gradient(225deg, #16203c, #5d8bff)",
     url: "https://www.linkedin.com/in/andrea-signoretti-a17093230/"
+  },
+  {
+    image: "/assets/Gaspard.png",
+    title: "Octave Gaspard",
+    subtitle: "Student",
+    handle: "@octavegaspard",
+    borderColor: "#9bb7ff",
+    gradient: "linear-gradient(210deg, #131c35, #4f7bff)",
+    url: "https://www.linkedin.com/in/octave-g-b47b93264/"
+  },
+  {
+    image: "/assets/Turkieh.png",
+    title: "Thomas Turkieh",
+    subtitle: "Student",
+    handle: "@thomas-turkieh",
+    borderColor: "#9bb7ff",
+    gradient: "linear-gradient(165deg, #1a2649, #7fa3ff)",
+    url: "https://media.licdn.com/dms/image/v2/C4E03AQHBP-RcilWHyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1644261388068?e=1755734400&v=beta&t=VKUlEWRNLx4eucjgFd_TgrjoZOkAEvBS0L4tzad6UTU"
+  },
+  {
+    image: "/assets/Gauthier.png",
+    title: "Vianney Gauthier",
+    subtitle: "Student",
+    handle: "@vianney-gauthier",
+    borderColor: "#9bb7ff",
+    gradient: "linear-gradient(195deg, #121a31, #5d8bff)",
+    url: "https://www.linkedin.com/in/vianney-gauthier-42b308334/"
   }
-  ];
+];
 
   let data: ChromaItem[];
   if (color === 'orange') {
     data = orangeGrid;
   } else {
-    data = colorGrid;
+    data = orangeGrid;
   }
 
   useEffect(() => {

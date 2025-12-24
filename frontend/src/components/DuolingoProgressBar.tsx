@@ -10,9 +10,9 @@ const duolingoProgressBarStyles = `
   margin: auto;
   padding: 1.5rem;
   border-radius: 2rem;
-  background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0px 0px 6px 6px rgba(184, 129, 1, 0.10),
-      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background: linear-gradient(150deg, rgba(8, 12, 26, 0.9), rgba(12, 22, 48, 0.92));
+  box-shadow: 0px 0px 18px 8px rgba(79, 123, 255, 0.08),
+      0 10px 30px -5px rgba(4, 13, 46, 0.45);
   position: relative;
 }
 
@@ -24,7 +24,7 @@ const duolingoProgressBarStyles = `
   position: relative;
   width: 100%;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 25px;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -37,7 +37,7 @@ const duolingoProgressBarStyles = `
 
 .duolingo-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #FFA500 0%, #FFD246 50%, #FFB347 100%);
+  background: linear-gradient(90deg, #d9b64c 0%, #f2d680 50%, #d9b64c 100%);
   border-radius: 25px;
   transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -75,8 +75,8 @@ const duolingoProgressBarStyles = `
 }
 
 .duolingo-checkpoint.completed {
-  background: #FFD246;
-  border-color: #FFA500;
+  background: #f4c542;
+  border-color: #d9b64c;
   transform: translate(-50%, -50%) scale(1.1);
   animation: checkpointPulse 0.6s ease-out;
 }
@@ -145,13 +145,13 @@ const duolingoProgressBarStyles = `
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-  color: #333;
+  background: linear-gradient(135deg, #4f7bff 0%, #9bb7ff 100%);
+  color: #0b1533;
   padding: 1rem 2rem;
   border-radius: 25px;
   font-weight: 600;
   font-size: 1.1rem;
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(79, 123, 255, 0.35);
   z-index: 9999;
   animation: toastSlideIn 0.5s ease-out forwards, toastSlideOut 0.5s ease-in 2.5s forwards;
 }
@@ -247,7 +247,7 @@ const DuolingoProgressBar: React.FC<DuolingoProgressBarProps> = ({
         particleCount: 100,
         spread: 70,
         origin: { y: 0.6 },
-        colors: ['#FFD700', '#FFA500', '#FF6B6B', '#4ECDC4', '#45B7D1']
+      colors: ['#9bb7ff', '#4f7bff', '#6bffea', '#45b7d1', '#c6d9ff']
       });
     }
 

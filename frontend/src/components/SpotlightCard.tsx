@@ -9,8 +9,8 @@ const spotlightCardStyles = `
 .card-spotlight {
   position: relative;
   border-radius: 1.5rem;
-  border: 1px solid #222;
-  background-color: #111;
+  border: 1px solid rgba(108, 143, 255, 0.35);
+  background: linear-gradient(145deg, rgba(8, 12, 26, 0.92), rgba(16, 26, 52, 0.92));
   width: 400px;
   text-align: center;
   align: 'center';
@@ -41,7 +41,7 @@ const spotlightCardStyles = `
 const SpotlightCard: React.FC<SpotlightCardProps> = ({
   children,
   className = "",
-  spotlightColor = "rgba(225, 15, 15, 0.25)"
+  spotlightColor = "rgba(123, 164, 255, 0.25)"
 }) => {
   const divRef = useRef<HTMLDivElement>(null);
 

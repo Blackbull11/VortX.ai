@@ -26,11 +26,11 @@ const animateListStyles = `
 }
 
 .scroll-list::-webkit-scrollbar-track {
-  background: #733f10;
+  background: rgba(123, 164, 255, 0.15);
 }
 
 .scroll-list::-webkit-scrollbar-thumb {
-  background: #733f10;
+  background: #7fa3ff;
   border-radius: 4px;
 }
 
@@ -46,21 +46,23 @@ const animateListStyles = `
 
 .item {
   padding: 16px;
-  background-color: #733f10;
+  background-color: rgba(14, 23, 48, 0.9);
   border-radius: 8px;
   margin-bottom: 1rem;
   transition: all 0.2s ease;
   border: 2px solid transparent;
 }
-
+.item:hover {
+  background: linear-gradient(135deg, #2d4fb2 0%, #6b8cff 100%);
+  }
 .item.selected {
-  background-color: #ce8c00;
-  border: 2px solid #ffd246;
-  box-shadow: 0 0 15px rgba(226, 113, 0, 0.4);
+  background: linear-gradient(135deg, #2d4fb2 0%, #6b8cff 100%);
+  border: 2px solid #9bb7ff;
+  box-shadow: 0 0 18px rgba(79, 123, 255, 0.35);
 }
 
 .item-text {
-  color: #fffac2;
+  color: #eaf0ff;
   margin: 0;
 }
 
@@ -70,7 +72,7 @@ const animateListStyles = `
   left: 0;
   right: 0;
   height: 50px;
-  background: linear-gradient(to bottom, #060010, transparent);
+  background: linear-gradient(to bottom, #050915, transparent);
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
@@ -81,7 +83,7 @@ const animateListStyles = `
   left: 0;
   right: 0;
   height: 100px;
-  background: linear-gradient(to top, #060010, transparent);
+  background: linear-gradient(to top, #050915, transparent);
   pointer-events: none;
   transition: opacity 0.3s ease;
 }`

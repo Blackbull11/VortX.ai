@@ -6,11 +6,13 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   background:
-    /* Subtle grid pattern, lines every 64px to match DotGrid */
-    repeating-linear-gradient(0deg, rgba(229, 26, 26, 0.02) 0px, rgba(203, 28, 28, 0.02) 1px, transparent 1px, transparent 108px),
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 108px),
+    /* Subtle grid pattern, lines every 72px to match DotGrid */
+    repeating-linear-gradient(0deg, rgba(86, 125, 255, 0.06) 0px, rgba(66, 98, 191, 0.06) 1px, transparent 1px, transparent 72px),
+    repeating-linear-gradient(90deg, rgba(86, 125, 255, 0.06) 0px, rgba(66, 98, 191, 0.06) 1px, transparent 1px, transparent 72px),
     /* Main gradient */
-    linear-gradient(320deg, #2d1600 0%, #1a0e00 100%);
+    radial-gradient(circle at 20% 20%, rgba(94, 138, 255, 0.08), transparent 28%),
+    radial-gradient(circle at 80% 70%, rgba(87, 116, 230, 0.08), transparent 25%),
+    linear-gradient(200deg, #0b1733 0%, #0d1e44 50%, #0a1024 100%);
   z-index: 0;
   color: #fff;
 }
@@ -21,7 +23,7 @@ body::before {
   left: 0; top: 0; right: 0; bottom: 0;
   pointer-events: none;
   z-index: 1;
-  background: radial-gradient(circle at 80% 10%, rgba(255, 210, 70, 0.10) 0, transparent 60%);
+  background: radial-gradient(circle at 80% 10%, rgba(94, 138, 255, 0.20) 0, transparent 60%);
 }
 
 body::after {
@@ -30,7 +32,7 @@ body::after {
   left: 0; top: 0; right: 0; bottom: 0;
   pointer-events: none;
   z-index: 2;
-  background: radial-gradient(circle at 10% 90%, rgba(255, 210, 70, 0.10) 0, transparent 60%);
+  background: radial-gradient(circle at 10% 90%, rgba(64, 209, 255, 0.12) 0, transparent 60%);
 }
 
 * {

@@ -38,10 +38,10 @@ const stepperStyles = `
     max-width: 40wh;
     min-height: 600px; /* Or whatever minimum you want */
     // height: 600px;
-    background: rgba(0, 0, 0, 0.65);
+    background: linear-gradient(150deg, rgba(8, 12, 26, 0.9), rgba(12, 22, 48, 0.92));
     border-radius: 2rem; /* Uniform border radius for all corners */
-    box-shadow: 0px 0px 6px 6px rgba(184, 129, 1, 0.10),
-        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 0px 18px 8px rgba(79, 123, 255, 0.08),
+        0 10px 30px -5px rgba(4, 13, 46, 0.45);
     display: flex;
     flex-direction: column;
 }
@@ -73,8 +73,8 @@ const stepperStyles = `
 .footer-container {
     height: 100px; /* Fixed height */
     padding: 0 2rem; /* Remove top/bottom padding */
-    border-top: 1px solid rgba(255, 210, 70, 0.2);
-    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(123, 164, 255, 0.25);
+    background: rgba(6, 10, 22, 0.7);
     border-radius: 0 0 2rem 2rem;
     display: flex;
     align-items: center;
@@ -107,9 +107,9 @@ const stepperStyles = `
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    background: linear-gradient(65deg, #ffd246 0%, #e27100 100%);
+    background: linear-gradient(135deg, #4f7bff 0%, #7fa3ff 100%);
     border: none;
-    color: #1a1000;
+    color: #0b1533;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: -0.025em;
@@ -118,7 +118,7 @@ const stepperStyles = `
     min-width: 120px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(226, 113, 0, 0.4);
+    box-shadow: 0 4px 15px rgba(79, 123, 255, 0.35);
 }
 
 .back-button:before {
@@ -128,7 +128,7 @@ const stepperStyles = `
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 210, 70, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
     transition: left 0.5s;
 }
 
@@ -137,23 +137,23 @@ const stepperStyles = `
 }
 
 .back-button:hover {
-    background: linear-gradient(135deg, #ffd246 0%, #ffed4e 100%);
-    color: #2d1600;
+    background: linear-gradient(135deg, #7fa3ff 0%, #b5cbff 100%);
+    color: #0b1533;
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(226, 113, 0, 0.5);
+    box-shadow: 0 6px 20px rgba(79, 123, 255, 0.45);
 }
 
 .back-button:active {
     transform: translateY(0);
-    box-shadow: 0 2px 6px rgba(226, 113, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(79, 123, 255, 0.2);
 }
 
 .back-button.inactive {
     pointer-events: none;
     opacity: 0.5;
-    color: #733f10;
-    background: rgba(115, 63, 16, 0.3);
-    border-color: rgba(255, 210, 70, 0.1);
+    color: #5f6b94;
+    background: rgba(35, 53, 92, 0.3);
+    border-color: rgba(123, 164, 255, 0.1);
     cursor: not-allowed;
 }
 
@@ -163,9 +163,9 @@ const stepperStyles = `
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    background: linear-gradient(135deg, #e27100 0%, #ffd246 100%);
+    background: linear-gradient(135deg, #4f7bff 0%, #7fa3ff 100%);
     border: none;
-    color: #1a1000;
+    color: #0b1533;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: -0.025em;
@@ -174,7 +174,7 @@ const stepperStyles = `
     min-width: 120px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(226, 113, 0, 0.4);
+    box-shadow: 0 4px 15px rgba(79, 123, 255, 0.35);
 }
 
 .next-button:before {
@@ -184,7 +184,7 @@ const stepperStyles = `
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
     transition: left 0.5s;
 }
 
@@ -193,16 +193,15 @@ const stepperStyles = `
 }
 
 .next-button:hover {
-    background: linear-gradient(135deg, #ffd246 0%, #ffed4e 100%);
-    color: #2d1600;
+    background: linear-gradient(135deg, #7fa3ff 0%, #b5cbff 100%);
+    color: #0b1533;
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(226, 113, 0, 0.5);
-}
+    box-shadow: 0 6px 20px rgba(79, 123, 255, 0.45);
 }
 
 .next-button:active {
     transform: translateY(-1px);
-    box-shadow: 0 3px 10px rgba(226, 113, 0, 0.3);
+    box-shadow: 0 3px 10px rgba(79, 123, 255, 0.3);
 }
 
 .step-indicator {
@@ -240,7 +239,7 @@ const stepperStyles = `
     flex: 1;
     overflow: hidden;
 
-  background: linear-gradient(90deg, #E27100 0%, #FFD246 50%, #E27100 100%);
+  background: linear-gradient(90deg, #2d4fb2 0%, #6b8cff 50%, #2d4fb2 100%);
   background-size: 200% 100%;
   background-position: 0% 0%;
   animation: flow-line 2s linear infinite;
@@ -271,7 +270,7 @@ const stepperStyles = `
 .check-icon {
     height: 1rem;
     width: 1rem;
-    color: #ffd246;
+    color: #f4c542;
 }
 `
   

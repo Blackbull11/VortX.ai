@@ -278,8 +278,8 @@ const App: React.FC = () => {
           <DotGrid
             dotSize={8}
             gap={100}
-            baseColor="#e27100"
-            activeColor="#ffd246"
+            baseColor="#3f67ff"
+            activeColor="#9bb7ff"
             proximity={120}
             shockRadius={500}
             shockStrength={5}
@@ -304,19 +304,19 @@ const App: React.FC = () => {
               margin: '40px auto',
             }}
           >
-            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(226, 113, 0 , 0.2)">
+            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(123, 164, 255 , 0.2)">
               <GradientText animationSpeed={10}>
                 Connect your AI Assistant to your cloud
               </GradientText>
             </SpotlightCard>
 
-            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(226, 113, 0 , 0.2)">
+            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(123, 164, 255 , 0.2)">
               <GradientText animationSpeed={10}>
                 Get help from the internet
               </GradientText>
             </SpotlightCard>
 
-            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(226, 113, 0 , 0.2)">
+            <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(123, 164, 255 , 0.2)">
               <GradientText animationSpeed={10}>
                 Complete your tasks efficiently
               </GradientText>
@@ -345,13 +345,13 @@ const App: React.FC = () => {
               marginTop: '32px',
               padding: '12px 32px',
               fontSize: '1.1rem',
-              background: 'linear-gradient(90deg, #e27100 0%, #ffd246 100%)',
-              color: '#222',
+              background: 'linear-gradient(90deg, #4f7bff 0%, #7fa3ff 100%)',
+              color: '#0b1533',
               border: 'none',
               borderRadius: '8px',
               cursor: 'pointer',
               fontWeight: 600,
-              boxShadow: '0 2px 12px rgba(226,113,0,0.12)'
+              boxShadow: '0 4px 18px rgba(79,123,255,0.25)'
             }}
             onClick={() => {
               const divider = document.getElementById('stepper-section');
@@ -369,7 +369,7 @@ const App: React.FC = () => {
           </button>
         </div>
           <ChromaGrid
-            color="orange"
+            color="#4f7bff"
             radius={300}
             damping={0.45}
             fadeOut={0.6}
@@ -380,7 +380,7 @@ const App: React.FC = () => {
           style={{
             width: '100%',
             height: '2px',
-            background: 'linear-gradient(90deg, #e27100 0%, #ffd246 100%)',
+            background: 'linear-gradient(90deg, #5d8bff 0%, #9bb7ff 100%)',
             opacity: 0.7,
             margin: '32px 0',
             borderRadius: '1px',
@@ -431,9 +431,8 @@ const App: React.FC = () => {
                   fontSize: '2rem',
                   fontWeight: 'bold',
                   marginBottom: '2rem',
-                  background: 'linear-gradient(135deg, #e27100 0%, #ffd246 100%)',
                   WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
+                  WebkitTextFillColor: 'white',
                   backgroundClip: 'text',
                   lineHeight: 1.2,
                 }}>
@@ -450,7 +449,7 @@ const App: React.FC = () => {
                 </p>
                 <p style={{
                   fontSize: '1.1rem',
-                  color: '#ffd246',
+                  color: '#9bb7ff',
                   opacity: 0.9,
                   fontStyle: 'italic',
                 }}>
@@ -489,7 +488,7 @@ const App: React.FC = () => {
             <Step>
               <h2>📚 Subject Area:</h2>
               <p>What subjects would you like to explore or improve? 🔍 <br />
-                <small style={{ color: '#ffd246' }}>Click to select multiple subjects</small></p>
+                <small style={{ color: '#9bb7ff' }}>Click to select multiple subjects</small></p>
               <div style={{
                 display: 'flex',
                 justifyContent: 'center',
@@ -529,7 +528,7 @@ const App: React.FC = () => {
                   style={{
                     width: '100%',
                     height: '2px',
-                    background: 'linear-gradient(60deg, #e27100 20%, #ffd246 100%)',
+                    background: 'linear-gradient(60deg, #4f7bff 20%, #9bb7ff 100%)',
                     opacity: 0.7,
                     margin: '32px 0',
                     borderRadius: '1px',
@@ -572,7 +571,7 @@ const App: React.FC = () => {
                     style={{
                       width: '100%',
                       height: '2px',
-                      background: 'linear-gradient(60deg, #e27100 20%, #ffd246 100%)',
+                      background: 'linear-gradient(60deg, #4f7bff 20%, #9bb7ff 100%)',
                       opacity: 0.7,
                       margin: '32px 0',
                       borderRadius: '1px',
@@ -580,7 +579,7 @@ const App: React.FC = () => {
                   />
                 </div>
               ) : (
-                <div style={{ textAlign: 'center', padding: '40px', color: '#ffd246' }}>
+                <div style={{ textAlign: 'center', padding: '40px', color: '#9bb7ff' }}>
                   <p>Please select subjects in the previous step to see available topics! 👆</p>
                   <div style={{ fontSize: '12px', color: '#888', marginTop: '10px' }}>
                     Debug: selectedSubjects = {JSON.stringify(selectedSubjects, null, 2)}
@@ -600,7 +599,7 @@ const App: React.FC = () => {
                   padding: '12px',
                   fontSize: '16px',
                   borderRadius: '8px',
-                  border: '2px solid #733f10',
+                  border: '2px solid #3f67ff',
                   backgroundColor: '#1a1a1a',
                   color: '#fff',
                   outline: 'none'
@@ -647,7 +646,7 @@ const App: React.FC = () => {
               fontSize: '2.5rem',
               fontWeight: 'bold',
               marginBottom: '1rem',
-              background: 'linear-gradient(135deg, #e27100 0%, #ffd246 100%)',
+              background: 'linear-gradient(135deg, #4f7bff 0%, #9bb7ff 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -657,7 +656,7 @@ const App: React.FC = () => {
             </h2>
             <p style={{
               fontSize: '1.2rem',
-              color: '#ffd246',
+              color: '#9bb7ff',
               opacity: 0.9,
               maxWidth: '600px',
               margin: '0 auto',

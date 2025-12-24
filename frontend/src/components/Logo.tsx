@@ -5,7 +5,7 @@ const logoStylesLight = `
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #FFBC1B 0%, #E27100 100%);
+  background: linear-gradient(90deg, #9bb7ff 0%, #4f7bff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -20,7 +20,7 @@ const logoStylesDark = `
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #481700 0%, #7C310B 100%);
+  background: linear-gradient(90deg, #1f2f63 0%, #4f7bff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

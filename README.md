@@ -36,8 +36,7 @@ vortx.ai is an AI-powered assistant platform designed to help you in your studie
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/vortx.ai.git
-   cd vortx.ai
+   git clone https://github.com/Blackbull11/VortX.ai.git
    ```
 2. **Install backend dependencies:**
    ```bash
