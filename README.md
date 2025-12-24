@@ -8,8 +8,8 @@ vortx.ai is an AI-powered assistant platform designed to help you in your studie
 - **Backend**: Python Flask API for agent logic, media generation, and real-time updates.
 
 <div style="display: flex">
-    <img src="resources/frontpage.png" width="50%" aspect-ratio="1" alt="Main Interface">
-    <img src="resources/learningpage.png" width="50%" aspect-ratio="1" alt="Main Interface">
+    <img src="resources/frontpage.png" width="100%" aspect-ratio="1" alt="Main Interface">
+    <img src="resources/learningpage.png" width="100%" aspect-ratio="1" alt="Main Interface">
 </div>
 
 ## Project Structure
